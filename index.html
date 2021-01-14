@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Password strength feedback</title>
+</head>
+<body>
+    <div class="card done">
+        <p class="title">Create New Password</p>
+
+        <form>
+            <div class="form-control">
+                <input type="password" id="password" placeholder="Password">
+                <div class="feedback pswd-feedback fair">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                <div class="feedback confirm-feedback ok">
+                    <i class="fas fa-check"></i>
+                    <span class="no-match">Don't match</span>
+                    <span class="match">Match</span>
+                </div>
+            </div>
+            <button class="submit">Create Account</button>
+        </form>
+    </div>
+    
+</body>
+</html>
